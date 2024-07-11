@@ -5,11 +5,16 @@
 1. Access to diverse learning materials.
 2. Connect with online mentors for guidance.
 3. School Information and Admissions:
+
+
 **Detailed school profiles.**
 1. Admission processes and fee structures.
-2. Affordable Learning Materials:
+
+
 **Affordable Learning Materials:**
 1. Marketplace for second-hand and reusable learning materials, including laptops.
+
+
 **Industry Training and Job Assistance:**
 1. Information on industry training programs.
 2. Job aid centers to support employment opportunities.
