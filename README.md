@@ -14,6 +14,14 @@
 **Affordable Learning Materials:**
 1. Marketplace for second-hand and reusable learning materials, including laptops.
 
+## Installation
+
+To clone and run this repository locally, follow these steps:
+
+1. Clone the repository using Git:
+   ```bash
+   git clone https://github.com/Shravansrk-create/Integrated-common-Services-to-Common-people.git
+
 
 **Industry Training and Job Assistance:**
 1. Information on industry training programs.
