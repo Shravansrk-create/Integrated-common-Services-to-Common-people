@@ -1,5 +1,9 @@
-# Integrated-common-Services-to-Common-people
-**Objective**: To create an accessible and unified platform that offers a wide range of educational resources and services to students, teachers, and the general public.
+# Intel Project Integrated-common-Services-to-Common-people
+This repository is part of the Intel Unnati Industrial Training Program 2024. To create an accessible and unified platform that offers a wide range of educational resources and services to students, teachers, and the general public.
+
+# Introduction
+This project aims to create an accessible and unified platform that provides a comprehensive range of educational resources and services. Our goal is to support students, teachers, and the general public by offering valuable tools and materials that enhance learning and teaching experiences. Through this platform, we strive to foster an inclusive educational environment that empowers individuals to acquire new skills and knowledge.
+
 # Features:
 **Learning Materials and Mentorship:**
 1. Access to diverse learning materials.
