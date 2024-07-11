@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8f5e9; /* Light green background */
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: row;
+}
+
+.school-details {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.school-picture {
+    flex: 2; /* Adjusted flex value to make the picture section larger */
+    text-align: center;
+}
+
+.school-picture img {
+    width: 100%;
+    height: auto;
+    max-width: 600px; /* Set a max width to ensure the image doesn't get too large */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.rating {
+    margin-top: 20px;
+}
+
+.rating span {
+    color: #FFD700; /* Golden color for rating stars */
+}
+
+.admission-form-link {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.navigation-bar {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between; /* Align items at the ends */
+    align-items: center; /* Center vertically */
+}
+
+.navigation-bar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.navigation-bar a:hover {
+    background-color: #555;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    padding: 0 20px;
+}
+
+.menu-items {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    width: 200px;
+    top: 60px; /* Adjust top position based on header height */
+    left: 20px; /* Adjust left position for alignment */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.menu-items a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.menu-items a:hover {
+    background-color: #555;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .school-details {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .school-picture {
+        margin-bottom: 20px;
+    }
+}

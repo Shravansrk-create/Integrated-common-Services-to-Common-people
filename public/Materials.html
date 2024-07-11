@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learning Material - Student Portal</title>
+    <link rel="stylesheet" type="text/css" href="learning-material.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Learning Material</h1>
+    </div>
+    <div class="container">
+        <div class="material-list">
+            <h2>Available Materials</h2>
+            <ul id="materialItems">
+                <!-- Demo materials -->
+                <li>
+                    <h3>Introduction to Computer Science</h3>
+                    <p>Learn the basics of computer science with this comprehensive guide.</p>
+                    <button onclick="downloadMaterial('intro_to_cs.pdf')">Download</button>
+                </li>
+                <li>
+                    <h3>Data Structures and Algorithms</h3>
+                    <p>Understand the core concepts of data structures and algorithms.</p>
+                    <button onclick="downloadMaterial('data_structures_algorithms.pdf')">Download</button>
+                </li>
+                <li>
+                    <h3>Web Development Basics</h3>
+                    <p>Start building websites with HTML, CSS, and JavaScript.</p>
+                    <button onclick="downloadMaterial('web_development_basics.pdf')">Download</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Student Portal. All rights reserved.</p>
+    </div>
+    <script src="learning-material.js"></script>
+</body>
+</html>

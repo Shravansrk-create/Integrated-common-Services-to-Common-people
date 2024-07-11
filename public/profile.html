@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <style>
+        /* Same CSS as provided */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+        .profile-details {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .profile-picture {
+            flex: 1;
+            text-align: center;
+        }
+        .profile-picture img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .navigation-bar {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navigation-bar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        .navigation-bar a:hover {
+            background-color: #555;
+        }
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+            color: white;
+            padding: 0 20px;
+        }
+        .menu-items {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            width: 200px;
+            top: 60px;
+            left: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            z-index: 1;
+        }
+        .menu-items a {
+            display: block;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .menu-items a:hover {
+            background-color: #555;
+        }
+        .profile-details h2,
+        .profile-details p {
+            margin-bottom: 10px;
+        }
+        .profile-details input[type="text"],
+        .profile-details input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .profile-details button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .profile-details button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Profile</h1>
+    </div>
+    
+    <div class="navigation-bar">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <a href="index.html">Home</a>
+        <a href="admission.html">Admission</a>
+        <a href="buy_sell.html">Buy & Sell</a>
+        <a href="activities.html">Activities</a>
+        <a href="industrial_training.html">Industrial Training</a>
+        <div class="menu-items" id="menuItems">
+            <a href="settings.html">Settings</a>
+            <a href="profile.html">Profile</a>
+            <a href="index.html">Log Out</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="profile-details">
+            <h2>Personal Information</h2>
+            <p>Full Name: <input type="text" id="fullName" placeholder="Enter your full name"></p>
+            <p>Email Address: <input type="email" id="email" placeholder="Enter your email address"></p>
+            <p>Phone Number: <input type="text" id="phoneNumber" placeholder="Enter your phone number"></p>
+            <button onclick="saveChanges()">Save Changes</button>
+        </div>
+        <div class="profile-picture">
+            <img src="profile_placeholder.jpg" alt="Profile Picture" id="profilePic">
+            <p>Change Profile Picture</p>
+            <input type="file" id="profilePicInput" onchange="changeProfilePic()">
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Student Portal. All rights reserved.</p>
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menuItems");
+            menu.style.display = (menu.style.display === "block") ? "none" : "block";
+        }
+
+        function saveChanges() {
+            var fullName = document.getElementById("fullName").value;
+            var email = document.getElementById("email").value;
+            var phoneNumber = document.getElementById("phoneNumber").value;
+            var profilePic = document.getElementById("profilePic").src;
+
+            fetch('/save_profile', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    fullName: fullName,
+                    email: email,
+                    phoneNumber: phoneNumber,
+                    profilePic: profilePic
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert("Profile updated successfully!");
+                } else {
+                    alert("Error updating profile.");
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+        function changeProfilePic() {
+            var input = document.getElementById("profilePicInput");
+            var file = input.files[0];
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+                document.getElementById("profilePic").src = e.target.result;
+            }
+
+            if (file) {
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
+</body>
+</html>
