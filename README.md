@@ -14,6 +14,11 @@
 **Affordable Learning Materials:**
 1. Marketplace for second-hand and reusable learning materials, including laptops.
 
+
+**Industry Training and Job Assistance:**
+1. Information on industry training programs.
+2. Job aid centers to support employment opportunities.
+
 ## Installation
 
 To clone and run this repository locally, follow these steps:
@@ -22,10 +27,6 @@ To clone and run this repository locally, follow these steps:
    ```bash
    git clone https://github.com/Shravansrk-create/Integrated-common-Services-to-Common-people.git
 
-
-**Industry Training and Job Assistance:**
-1. Information on industry training programs.
-2. Job aid centers to support employment opportunities.
 # Benefits:
 . Centralized access to educational resources.
 . Cost-effective solutions for learning materials.
