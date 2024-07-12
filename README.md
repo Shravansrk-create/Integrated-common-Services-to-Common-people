@@ -73,6 +73,26 @@ To clone and run this repository locally, follow these steps:
    ```bash
    git clone https://github.com/Shravansrk-create/Integrated-common-Services-to-Common-people.git
 
+2. Express:
+   ```bash
+   npm install express
+
+3. Mongoose:
+   ```bash
+   npm install mongoose
+
+4. Body-parser:
+   ```bash
+   npm install body-parser
+
+5. Cors:
+   ```bash
+   npm install cors
+
+6. Dotenv:
+   ```bash
+   npm install dotenv
+
 # Benefits:
 . Centralized access to educational resources.
 . Cost-effective solutions for learning materials.
