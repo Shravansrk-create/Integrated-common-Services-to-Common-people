@@ -3,10 +3,14 @@ This repository is part of the Intel Unnati Industrial Training Program 2024. To
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [Installation](#installation))
-4. [Usage](#usage)
-5. [Contributing](#contributing)
-6. [License](#license)
+2. [Project Workflow](#project-workflow)
+3. [Features](#features)
+4. [Installation](#installation)
+5. [Result](#result)
+6. [Benefits](#benefits)
+7. [Contributing](#contributing)
+8. [License](#license)
+
 
 # Introduction
 This project aims to create an accessible and unified platform that provides a comprehensive range of educational resources and services. Our goal is to support students, teachers, and the general public by offering valuable tools and materials that enhance learning and teaching experiences. Through this platform, we strive to foster an inclusive educational environment that empowers individuals to acquire new skills and knowledge.
@@ -107,3 +111,7 @@ Contributions are welcome! Whether you want to submit a bug report, suggest a fe
 
 **Fork the Repository:**
 1.   Click the "Fork" button at the top-right corner of this repository's page to create your own copy of the repository.
+
+# License
+
+This project is licensed under the MIT License. See the [LICENSE] file for more details.
