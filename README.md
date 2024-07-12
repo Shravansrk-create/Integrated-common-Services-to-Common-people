@@ -4,9 +4,10 @@ This repository is part of the Intel Unnati Industrial Training Program 2024. To
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Installation](#installation)
-3. [Usage](#usage)
-4. [Contributing](#contributing)
-5. [License](#license)
+3. [Project Workflow](#Project Workflow)
+4. [Usage](#usage)
+5. [Contributing](#contributing)
+6. [License](#license)
 
 # Introduction
 This project aims to create an accessible and unified platform that provides a comprehensive range of educational resources and services. Our goal is to support students, teachers, and the general public by offering valuable tools and materials that enhance learning and teaching experiences. Through this platform, we strive to foster an inclusive educational environment that empowers individuals to acquire new skills and knowledge.
@@ -14,18 +15,31 @@ This project aims to create an accessible and unified platform that provides a c
 # Project Workflow
 The overall workflow of the project as follows:
 **1. Login Page:** User authentication interface to access the portal.
+
 **2. Homepage:** Central dashboard with navigation links to various sections.
+
 **3. Navigation Bar:** Menu for easy access to different sections of the portal.
+
 **4. Admission:** Section for viewing and applying for admission programs.
+
 **5. Buy & Sell:** Platform for buying and selling books, supplies, and more.
+
 **6. Activities:** Area for viewing and participating in extracurricular activities.
+
 **7. Industrial Training:** Section to find and apply for industrial training opportunities.
+
 **8. Learning Materials:** Repository for accessing and downloading educational resources.
+
 **9. Online Mentors:** Platform to browse and contact online mentors.
+
 **10. Teachers:** Directory of teacher profiles with contact and interaction options.
+
 **11. Settings:** User interface for updating profile settings and preferences.
+
 **12. Profile:** User profile management with options to update personal information.
+
 **13. Database:** Backend component for storing and retrieving user and application data.
+
 **14. Confirmation Page:** Feedback interface confirming successful actions and updates.
 
 # Features:
