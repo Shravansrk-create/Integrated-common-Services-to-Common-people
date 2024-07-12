@@ -11,6 +11,94 @@ This repository is part of the Intel Unnati Industrial Training Program 2024. To
 # Introduction
 This project aims to create an accessible and unified platform that provides a comprehensive range of educational resources and services. Our goal is to support students, teachers, and the general public by offering valuable tools and materials that enhance learning and teaching experiences. Through this platform, we strive to foster an inclusive educational environment that empowers individuals to acquire new skills and knowledge.
 
+
+# Project Workflow
+
+## Flowchart
+
+```mermaid
+graph TD
+    style LoginPage fill:#f9f,stroke:#333,stroke-width:4px;
+    style VerifyLogin fill:#ff9,stroke:#333,stroke-width:4px;
+    style Homepage fill:#9f9,stroke:#333,stroke-width:4px;
+    style NavigationBar fill:#9ff,stroke:#333,stroke-width:4px;
+    style Admission fill:#ff99cc,stroke:#333,stroke-width:2px;
+    style BuySell fill:#99ccff,stroke:#333,stroke-width:2px;
+    style Activities fill:#ffcc99,stroke:#333,stroke-width:2px;
+    style IndustrialTraining fill:#ccff99,stroke:#333,stroke-width:2px;
+    style LearningMaterials fill:#ff9999,stroke:#333,stroke-width:2px;
+    style OnlineMentors fill:#99ff99,stroke:#333,stroke-width:2px;
+    style Teachers fill:#9999ff,stroke:#333,stroke-width:2px;
+    style Settings fill:#ffccff,stroke:#333,stroke-width:2px;
+    style Profile fill:#ccffff,stroke:#333,stroke-width:2px;
+
+    LoginPage[/"Login Page"/]
+    VerifyLogin{{Verify Login}}
+    Homepage[/"Homepage"/]
+    NavigationBar{{Navigation Bar}}
+
+    Admission[["Admission"]]
+    BuySell[["Buy & Sell"]]
+    Activities[["Activities"]]
+    IndustrialTraining[["Industrial Training"]]
+    LearningMaterials[["Learning Materials"]]
+    OnlineMentors[["Online Mentors"]]
+    Teachers[["Teachers"]]
+    Settings[["Settings"]]
+    Profile[["Profile"]]
+
+    ViewApply["View & Apply"]
+    BrowseItems["Browse Items"]
+    BuySellItems["Buy or Sell Items"]
+    ViewParticipate["View & Participate"]
+    ViewDetails["View Details"]
+    IndustrialViewApply["View & Apply"]
+    AccessDownload["Access & Download"]
+    BrowseContact["Browse & Contact"]
+    ViewProfiles["View Profiles"]
+    ProfileModal["Profile Modal"]
+    UpdateProfile["Update Profile"]
+    SaveChanges["Save Changes"]
+    UpdateDatabase["Update Database"]
+    Confirmation["Confirmation"]
+
+    LoginPage --> VerifyLogin
+    VerifyLogin --> Homepage
+    Homepage --> NavigationBar
+    
+    NavigationBar -->|Admission| Admission
+    NavigationBar -->|Buy & Sell| BuySell
+    NavigationBar -->|Activities| Activities
+    NavigationBar -->|Industrial Training| IndustrialTraining
+    NavigationBar -->|Learning Materials| LearningMaterials
+    NavigationBar -->|Online Mentors| OnlineMentors
+    NavigationBar -->|Teachers| Teachers
+    NavigationBar -->|Settings| Settings
+    NavigationBar -->|Profile| Profile
+    
+    Admission --> ViewApply
+    
+    BuySell --> BrowseItems
+    BrowseItems --> BuySellItems
+    
+    Activities --> ViewParticipate
+    ViewParticipate --> ViewDetails
+    
+    IndustrialTraining --> IndustrialViewApply
+    
+    LearningMaterials --> AccessDownload
+    
+    OnlineMentors --> BrowseContact
+    
+    Teachers --> ViewProfiles
+    ViewProfiles --> ProfileModal
+    
+    Settings --> UpdateProfile
+    UpdateProfile --> SaveChanges
+    SaveChanges --> UpdateDatabase
+    UpdateDatabase --> Confirmation
+
+
 # Features:
 **Learning Materials and Mentorship:**
 1. Access to diverse learning materials.
