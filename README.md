@@ -11,42 +11,6 @@ This repository is part of the Intel Unnati Industrial Training Program 2024. To
 # Introduction
 This project aims to create an accessible and unified platform that provides a comprehensive range of educational resources and services. Our goal is to support students, teachers, and the general public by offering valuable tools and materials that enhance learning and teaching experiences. Through this platform, we strive to foster an inclusive educational environment that empowers individuals to acquire new skills and knowledge.
 
-# Project Workflow
-
-## Flowchart
-
-```mermaid
-graph TD
-    A[Login Page] --> B[Verify Login]
-    B --> C[Homepage]
-    C --> D{Navigation Bar}
-    
-    D --> E[Admission]
-    D --> F[Buy & Sell]
-    D --> G[Activities]
-    D --> H[Industrial Training]
-    D --> I[Learning Materials]
-    D --> J[Online Mentors]
-    D --> K[Teachers]
-    D --> L[Settings]
-    D --> M[Profile]
-    
-    E --> E1[View & Apply]
-    F --> F1[Browse Items]
-    F1 --> F2[Buy or Sell Items]
-    G --> G1[View & Participate]
-    G1 --> G2[View Details]
-    H --> H1[View & Apply]
-    I --> I1[Access & Download]
-    J --> J1[Browse & Contact]
-    K --> K1[View Profiles]
-    K1 --> K2[Profile Modal]
-    L --> L1[Update Profile]
-    L1 --> L2[Save Changes]
-    L2 --> L3[Update Database]
-    L3 --> L4[Confirmation]
-
-
 
 # Features:
 **Learning Materials and Mentorship:**
