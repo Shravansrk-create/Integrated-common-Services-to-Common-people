@@ -42,6 +42,10 @@ The overall workflow of the project as follows:
 
 **14. Confirmation Page:** Feedback interface confirming successful actions and updates.
 
+![Intel Flow Chart](image/intel%20flow%20chart.png)
+
+
+
 # Features:
 **Learning Materials and Mentorship:**
 1. Access to diverse learning materials.
