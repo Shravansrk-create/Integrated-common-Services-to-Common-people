@@ -3,8 +3,7 @@ This repository is part of the Intel Unnati Industrial Training Program 2024. To
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [Installation](#installation)
-3. [Project Workflow](#Project Workflow)
+2. [Installation](#installation))
 4. [Usage](#usage)
 5. [Contributing](#contributing)
 6. [License](#license)
@@ -14,6 +13,7 @@ This project aims to create an accessible and unified platform that provides a c
 
 # Project Workflow
 The overall workflow of the project as follows:
+
 **1. Login Page:** User authentication interface to access the portal.
 
 **2. Homepage:** Central dashboard with navigation links to various sections.
